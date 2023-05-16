@@ -7,7 +7,7 @@ const ChatGPTLink = () => {
         href="https://openai.com/blog/chatgpt"
         target="_blank"
         rel="noreferrer"
-        className="flex items-center space-x-2 text-gray-400"
+        className="flex items-center space-x-2 text-gray-50"
       >
         <p className="text-xs">Powered by GhatGPT</p>
         <svg
