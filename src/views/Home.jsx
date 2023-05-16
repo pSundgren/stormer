@@ -2,11 +2,12 @@ import React from "react";
 
 /* Components */
 import logo from "../images/logo.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col justify-center w-screen h-screen max-w-2xl mt-20">
+      <div className="flex flex-col justify-center w-screen h-screen max-w-2xl">
         <div className="flex flex-col justify-center items-center px-5">
           <img src={logo} alt="logotype" className="w-fit" />
           <h1 className="text-xl font-base text-center mt-10 text-gray-50">
@@ -17,9 +18,11 @@ const Home = () => {
             them to practise on being assigned a project to design and explore
             and add to their design portfolio 🌱
           </p>
-          <button className="rounded-lg mt-6 py-3 px-6 font-semibold text-sm text-sky-50 bg-sky-700 shadow-md hover:bg-sky-600 transition-all">
-            Let's get started!
-          </button>
+          <Link to="/" role="button">
+            <button className="rounded-lg mt-6 py-3 px-6 font-semibold text-sm text-sky-50 bg-sky-700 shadow-sm hover:bg-sky-600 transition-all">
+              Let's get started!
+            </button>
+          </Link>
         </div>
       </div>
     </>

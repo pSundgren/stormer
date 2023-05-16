@@ -10,6 +10,7 @@ import How from "./views/How";
 
 /* Styling */
 import "./index.css";
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 /* Router */
 const router = createBrowserRouter([
@@ -17,7 +18,9 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <App>
-        <Home />
+        <FadeIn>
+          <Home />
+        </FadeIn>
       </App>
     ),
   },
@@ -25,7 +28,9 @@ const router = createBrowserRouter([
     path: "/how",
     element: (
       <App>
-        <How />
+        <FadeIn>
+          <How />
+        </FadeIn>
       </App>
     ),
   },
@@ -33,7 +38,9 @@ const router = createBrowserRouter([
     path: "/about",
     element: (
       <App>
-        <About />
+        <FadeIn>
+          <About />
+        </FadeIn>
       </App>
     ),
   },

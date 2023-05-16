@@ -2,7 +2,7 @@ import React from "react";
 
 const ChatGPTLink = () => {
   return (
-    <div className="p-5 self-start">
+    <div className="absolute bottom-5 left-5">
       <a
         href="https://openai.com/blog/chatgpt"
         target="_blank"

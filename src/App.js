@@ -11,10 +11,7 @@ const bgColor = {
 
 const App = ({ children }) => {
   return (
-    <div
-      className="flex flex-col w-screen h-screen items-center text-gray-300"
-      style={bgColor}
-    >
+    <div className="flex flex-col items-center text-gray-300" style={bgColor}>
       <Header />
       {children}
       <ChatGPTLink />
