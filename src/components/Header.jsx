@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <header className="absolute top-5 left-5 self-start">
+      <header className="absolute top-5 left-5">
         <ul className="flex flex-row space-x-5">
           <li className="text-xs">
             <NavLink
