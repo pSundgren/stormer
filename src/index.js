@@ -11,6 +11,7 @@ import How from "./views/How";
 /* Styling */
 import "./index.css";
 import FadeIn from "react-fade-in/lib/FadeIn";
+import Generate from "./views/Generate";
 
 /* Router */
 const router = createBrowserRouter([
@@ -20,6 +21,16 @@ const router = createBrowserRouter([
       <App>
         <FadeIn>
           <Home />
+        </FadeIn>
+      </App>
+    ),
+  },
+  {
+    path: "/generate",
+    element: (
+      <App>
+        <FadeIn>
+          <Generate />
         </FadeIn>
       </App>
     ),

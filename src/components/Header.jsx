@@ -1,48 +1,67 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+/* Components */
+import {
+  AboutIcon,
+  GenerateIdeaIcon,
+  HomeIcon,
+  HowIcon,
+} from "../images/icons/Icons";
+
+/* Classnames */
+const active =
+  "flex justify-center items-center p-3 border border-gray-600 rounded-lg bg-gray-50 opacity-100 bg-opacity-20 border-opactiy-100 shadow-sm transition-all transition-all";
+const inactive =
+  "flex justify-center items-center p-3 border border-gray-600 rounded-lg bg-gray-50 opacity-30 bg-opacity-20 border-opactiy-30 shadow-sm hover:opacity-100 hover:border-opactiy-100 hover:shadow-md transition-all";
+
 const Header = () => {
   return (
     <>
       <header className="absolute top-5 left-5">
         <ul className="flex flex-row space-x-5">
-          <li className="text-xs">
+          <li>
             <NavLink
               exact
               to=".."
               relative="path"
               reloadDocument
-              className={({ isActive }) =>
-                isActive ? "font-semibold" : "font-base"
-              }
+              className={({ isActive }) => (isActive ? active : inactive)}
             >
-              Generate an idea
+              <HomeIcon />
             </NavLink>
           </li>
-          <li className="text-xs">
+          <li>
             <NavLink
               exact
-              to="/about"
+              to="/generate"
               relative="path"
               reloadDocument
-              className={({ isActive }) =>
-                isActive ? "font-semibold" : "font-base"
-              }
+              className={({ isActive }) => (isActive ? active : inactive)}
             >
-              About this project
+              <GenerateIdeaIcon />
             </NavLink>
           </li>
-          <li className="text-xs">
+          <li>
             <NavLink
               exact
               to="/how"
               relative="path"
               reloadDocument
-              className={({ isActive }) =>
-                isActive ? "font-semibold" : "font-base"
-              }
+              className={({ isActive }) => (isActive ? active : inactive)}
             >
-              How does it work?
+              <HowIcon />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              exact
+              to="/about"
+              relative="path"
+              reloadDocument
+              className={({ isActive }) => (isActive ? active : inactive)}
+            >
+              <AboutIcon />
             </NavLink>
           </li>
         </ul>
