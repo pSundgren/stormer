@@ -7,15 +7,15 @@ import logo from "../images/logo.svg";
 const Home = () => {
   return (
     <div className="flex flex-col justify-center w-screen h-screen max-w-2xl">
-      <div className="flex flex-col justify-center items-center px-5">
-        <img src={logo} alt="logotype" className="w-40" />
-        <h1 className="text-xl font-base text-center mt-10 text-gray-50">
-          Random app idea generator for designers and developers
+      <div className="flex flex-col justify-center items-start px-5">
+        <h1 className="text-3xl font-semibold text-gray-50">
+          Want a random idea for an app to expand your expertise as a designer
+          or developer?
         </h1>
-        <p className="text-sm text-center mt-2">
-          This tool is developed for new and junior UX/UI designers to allow
-          them to practise on being assigned a project to design and explore and
-          add to their design portfolio 🌱
+        <p className="text-sm mt-6">
+          This tool is developed for junior UX/UI designers, and developers, to
+          allow them to practise on being assigned a project to design and
+          explore and add to their design portfolio 🌱
         </p>
         <Link to="/generate" relative="path" reloadDocument>
           <button className="rounded-lg mt-6 py-3 px-6 font-semibold text-sm text-sky-50 bg-sky-700 shadow-sm hover:bg-sky-600 transition-all">

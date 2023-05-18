@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 /* Components */
+import logo from "../images/logo.svg";
 import {
   AboutIcon,
   GenerateIdeaIcon,
@@ -66,6 +67,7 @@ const Header = () => {
           </li>
         </ul>
       </header>
+      <img src={logo} alt="logotype" className="w-20 absolute top-9 right-9" />
     </>
   );
 };
