@@ -1,4 +1,5 @@
 import React from "react";
+import { SecondaryButton } from "../components/Button";
 
 const How = () => {
   return (
@@ -19,9 +20,7 @@ const How = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="rounded-lg mt-6 py-3 px-6 font-semibold text-sm text-sky-500 border border-sky-500 hover:border-sky-300 hover:text-sky-300 transition-all">
-              Read more about ChatGPT’s API
-            </button>
+            <SecondaryButton label="Read more about ChatGPT’s API" />
           </a>
         </div>
       </div>

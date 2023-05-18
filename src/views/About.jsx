@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { SecondaryButton } from "../components/Button";
 
 const About = () => {
   return (
@@ -26,11 +27,7 @@ const About = () => {
         <p className="text-sm mt-2">
           And voilà, the random app idea generator was born! 🌱
         </p>
-        <Link to=".." relative="path" reloadDocument>
-          <button className="rounded-lg mt-6 py-3 px-6 font-semibold text-sm text-sky-500 border border-sky-500 hover:border-sky-300 hover:text-sky-300 transition-all">
-            Let's get started!
-          </button>
-        </Link>
+        <SecondaryButton label="Try it out!" to="/generate" />
       </div>
     </div>
   );

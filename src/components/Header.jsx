@@ -12,9 +12,9 @@ import {
 
 /* Classnames */
 const active =
-  "flex justify-center items-center p-3 border border-gray-600 rounded-lg bg-gray-50 opacity-100 bg-opacity-20 border-opactiy-100 shadow-sm transition-all transition-all";
+  "flex justify-center items-center p-3 border border-gray-600 rounded-md bg-gray-50 opacity-100 bg-opacity-20 border-opactiy-100 shadow-sm transition-all transition-all";
 const inactive =
-  "flex justify-center items-center p-3 border border-gray-600 rounded-lg bg-gray-50 opacity-30 bg-opacity-20 border-opactiy-30 shadow-sm hover:opacity-100 hover:border-opactiy-100 hover:shadow-md transition-all";
+  "flex justify-center items-center p-3 border border-gray-600 rounded-md bg-gray-50 opacity-30 bg-opacity-20 border-opactiy-30 shadow-sm hover:opacity-100 hover:border-opactiy-100 hover:shadow-md transition-all";
 
 const Header = () => {
   return (

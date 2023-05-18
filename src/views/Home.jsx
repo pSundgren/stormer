@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 /* Components */
 import logo from "../images/logo.svg";
+import { PrimaryButton } from "../components/Button";
 
 const Home = () => {
   return (
@@ -17,11 +18,7 @@ const Home = () => {
           allow them to practise on being assigned a project to design and
           explore and add to their design portfolio 🌱
         </p>
-        <Link to="/generate" relative="path" reloadDocument>
-          <button className="rounded-lg mt-6 py-3 px-6 font-semibold text-sm text-sky-50 bg-sky-700 shadow-sm hover:bg-sky-600 transition-all">
-            Let's get started!
-          </button>
-        </Link>
+        <PrimaryButton label="Let's get started" to="/generate" />
       </div>
     </div>
   );
