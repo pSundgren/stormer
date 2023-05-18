@@ -21,7 +21,7 @@ const Header = () => {
     <>
       <header className="absolute top-5 left-5">
         <ul className="flex flex-row space-x-5">
-          <li>
+          <li className="group">
             <NavLink
               exact
               to=".."
@@ -31,8 +31,11 @@ const Header = () => {
             >
               <HomeIcon />
             </NavLink>
+            <p className="text-xs text-center text-gray-300 pt-2 opacity-0 group-hover:opacity-100 transition-all">
+              Home
+            </p>
           </li>
-          <li>
+          <li className="group">
             <NavLink
               exact
               to="/generate"
@@ -42,8 +45,11 @@ const Header = () => {
             >
               <GenerateIdeaIcon />
             </NavLink>
+            <p className="text-xs text-center text-gray-300 pt-2 opacity-0 group-hover:opacity-100 transition-all">
+              Generate
+            </p>
           </li>
-          <li>
+          <li className="group">
             <NavLink
               exact
               to="/how"
@@ -53,8 +59,11 @@ const Header = () => {
             >
               <HowIcon />
             </NavLink>
+            <p className="text-xs text-center text-gray-300 pt-2 opacity-0 group-hover:opacity-100 transition-all">
+              How?
+            </p>
           </li>
-          <li>
+          <li className="group">
             <NavLink
               exact
               to="/about"
@@ -64,6 +73,9 @@ const Header = () => {
             >
               <AboutIcon />
             </NavLink>
+            <p className="text-xs text-center text-gray-300 pt-2 opacity-0 group-hover:opacity-100 transition-all">
+              About
+            </p>
           </li>
         </ul>
       </header>

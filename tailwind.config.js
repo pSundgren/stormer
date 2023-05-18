@@ -5,7 +5,9 @@ module.exports = {
     fontFamily: {
       sans: ["Plus Jakarta Sans"],
     },
-    extend: {},
+    extend: {
+      display: ["group-hover"],
+    },
   },
   plugins: [],
 };

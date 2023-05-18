@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center w-screen h-screen max-w-2xl">
+    <div className="flex flex-col justify-center w-screen h-screen max-w-2xl mt-5">
       <div className="flex flex-col justify-center items-start px-5">
         <h1 className="text-3xl font-semibold text-gray-50">
           What’s the backstory of this project?

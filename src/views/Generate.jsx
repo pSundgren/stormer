@@ -27,7 +27,7 @@ function Generate() {
   }, [index, transRef]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen max-w-2xl">
+    <div className="flex flex-col items-center justify-center w-screen h-screen max-w-2xl mt-5">
       <p>Hejsan</p>
       {/* TODO: Fix this
         transitions((i) => {
